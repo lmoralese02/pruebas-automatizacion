@@ -15,7 +15,7 @@ echo "probando snap"
 snap install hello-world
 echo "verificando snapd" 
 hello-world
-
+echo "otras acciones"
 
 
 
@@ -23,7 +23,10 @@ hello-world
 sudo snap install netbeans --classic
 -vscode
 -android studio
--virtualbox
+echo "instalando virtualbox"
+sudo nano /etc/apt/sources.list.d/oracle-virtualbox.list
+
+
 
 -flutter from snap
 -flutter doctor 

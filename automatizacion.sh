@@ -23,29 +23,25 @@ apt-get install wget
 echo "descargando androdid studio desde la pagina oficial"
 wget -O android-studio.tar.gz https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.0.1.0/android-studio-ide-193.6626763-linux.tar.gz
 echo "dirigiendo a la carpeta de descargas y descomprimiendo el archiovo"
- cd /home/luis/Descargas
- ls
- echo "moviendo a documentos y descomprimiendo"
- sudo mv android-studio.tar.gz /home/luis/Documentos
- mkdir android-studio 
- sudo mv android-studio.tar.gz /home/luis/Documetos/androdid-studio
+cd /home/luis/Descargas
+ls
+echo "moviendo a documentos y descomprimiendo"
+sudo mv android-studio.tar.gz /home/luis/Documentos
+mkdir android-studio 
+sudo mv android-studio.tar.gz /home/luis/Documetos/androdid-studio
 
-echo "instalacion de programas desde snap"
+echo "obteninedo vercript"
 
-echo " instalando netbeans desde snap "
-sudo snap install netbeans --classic
-echo "instalanado vscode"
-sudo snap install --classic code
-echo "instalando android studio "
--android studio
-echo "instalando virtualbox"
-sudo nano /etc/apt/sources.list.d/oracle-virtualbox.list
-
+wget -O veracript-1.24-update7-debian10.deb https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24-Update7-Debian-10-amd64.deb
+cd /home/luis/Descargas
+ls
+echo "instalando veracypt"
+sudo dpkg -i veracript-1.24-update7-debian10.deb
+echo "arreglando las dependencias faltantes"
+sudo apt-get -f install
 
 
--flutter from snap
--flutter doctor 
--flutter licenses
--instalar veracript
+
+
 
 

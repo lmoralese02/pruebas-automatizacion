@@ -1,7 +1,8 @@
-echo"script automatizacion de instalacion debian 10"
-echo"actualizacion" 
+#!/bin/bash
+echo "script automatizacion de instalacion debian 10"
+echo "actualizacion" 
 sudo apt-get update && sudo apt-get upgrade
-echo"instalando java 11"
+echo "instalando java 11"
 sudo apt install default-jre
 echo "verificando la version de java" 
 java -version
@@ -12,6 +13,8 @@ javac -version
 
 echo "instalando git "
 sudo apt install git
+echo "arreglando las dependencias faltantes"
+sudo apt-get -f install
 echo "instalando snap"
 sudo apt install snapd
 echo "probando snap"

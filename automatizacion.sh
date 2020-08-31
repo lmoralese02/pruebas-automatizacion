@@ -1,37 +1,30 @@
 #!/bin/bash
 echo "script automatizacion de instalacion debian 10"
 echo "actualizacion" 
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade -y
 echo "instalando java 11"
-sudo apt install default-jre
+sudo apt install default-jre -y
 echo "verificando la version de java" 
 java -version
 echo "instalando el compilaodr de java en terminal" 
-sudo apt install default-jdk
+sudo apt install default-jdk -y
 echo "verificando la version del compilador de java" 
 javac -version
 
 echo "instalando git "
-sudo apt install git
+sudo apt install git -y
 echo "arreglando las dependencias faltantes"
 sudo apt-get -f install
 echo "instalando snap"
-sudo apt install snapd
+sudo apt install snapd -y
 echo "probando snap"
 snap install hello-world
 echo "verificando snapd" 
 hello-world
 echo "instalando la utilidad wget para descargar android studio"
-apt-get install wget
+apt-get install wget -y
 echo "descargando androdid studio desde la pagina oficial"
-wget -O android-studio.tar.gz https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.0.1.0/android-studio-ide-193.6626763-linux.tar.gz
-echo "dirigiendo a la carpeta de descargas y descomprimiendo el archiovo"
-cd /home/luis/Descargas
-ls
-echo "moviendo a documentos y descomprimiendo"
-sudo mv android-studio.tar.gz /home/luis/Documentos
-mkdir android-studio 
-sudo mv android-studio.tar.gz /home/luis/Documetos/androdid-studio
+sudo wget -O android-studio.tar.gz https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.0.1.0/android-studio-ide-193.6626763-linux.tar.gz
 
 echo "obteninedo vercript"
 

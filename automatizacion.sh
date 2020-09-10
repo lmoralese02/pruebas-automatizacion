@@ -35,7 +35,7 @@ sudo apt-get -f install
 echo "instalando gnome boxes"
 sudo apt-get install gnome-boxes
 echo "instalndo telegram"
-sudo apt-get install telegram-desktop
+sudo apt-get install telegram-desktop -y
 echo "resolviendo dependencias"
 sudo apt-get -f install
 

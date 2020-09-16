@@ -41,7 +41,7 @@ sudo apt-get -f install
 
 
 echo "ahora tienes que reiniciar la computadora y ejecutar snapapps en esta misma carpeta"
-
+sudo reboot
 
 
 

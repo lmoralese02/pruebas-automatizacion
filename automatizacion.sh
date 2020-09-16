@@ -17,11 +17,11 @@ sudo apt-get -f install
 echo "instalando snap"
 sudo apt install snapd -y
 echo "probando snap"
-snap install hello-world
+sudo snap install hello-world
 echo "verificando snapd" 
 hello-world
 echo "instalando la utilidad wget para descargar android studio"
-apt-get install wget -y
+sudo apt-get install wget -y
 echo "descargando androdid studio desde la pagina oficial"
 sudo wget -O android-studio.tar.gz https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.0.1.0/android-studio-ide-193.6626763-linux.tar.gz
 echo "obteninedo vercript"
@@ -33,7 +33,7 @@ sudo dpkg -i veracript-1.24-update7-debian10.deb
 echo "arreglando las dependencias faltantes"
 sudo apt-get -f install
 echo "instalando gnome boxes"
-sudo apt-get install gnome-boxes
+sudo apt-get install gnome-boxes -y
 echo "instalndo telegram"
 sudo apt-get install telegram-desktop -y
 echo "resolviendo dependencias"

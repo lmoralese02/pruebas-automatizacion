@@ -14,23 +14,20 @@ echo "instalando git "
 sudo apt install git -y
 echo "arreglando las dependencias faltantes"
 sudo apt-get -f install
-echo "instalando snap"
-sudo apt install snapd -y
-echo "probando snap"
-sudo snap install hello-world
-echo "verificando snapd" 
-hello-world
 echo "instalando la utilidad wget para descargar android studio"
 sudo apt-get install wget -y
 echo "descargando androdid studio desde la pagina oficial"
 sudo wget -O android-studio.tar.gz https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.0.1.0/android-studio-ide-193.6626763-linux.tar.gz
 echo "obteninedo vercript"
 wget -O veracript-1.24-update7-debian10.deb https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24-Update7-Debian-10-amd64.deb
-cd /home/luis/Descargas
-ls
 echo "instalando veracypt"
 sudo dpkg -i veracript-1.24-update7-debian10.deb
 echo "arreglando las dependencias faltantes"
+sudo apt-get -f install
+echo "descaragando vscode "
+wget -O code.deb https://update.code.visualstudio.com/latest/linux-deb-x64/stable
+echo "instalnado vscode"
+sudo dpkg -i code.deb
 sudo apt-get -f install
 echo "instalando gnome boxes"
 sudo apt-get install gnome-boxes -y
@@ -38,8 +35,8 @@ echo "instalndo telegram"
 sudo apt-get install telegram-desktop -y
 echo "resolviendo dependencias"
 sudo apt-get -f install
-
-
+echo "instalando snap"
+sudo apt install snapd -y
 echo "ahora tienes que reiniciar la computadora y ejecutar snapapps en esta misma carpeta"
 sudo reboot
 

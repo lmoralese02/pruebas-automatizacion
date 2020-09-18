@@ -35,8 +35,11 @@ echo "instalndo telegram"
 sudo apt-get install telegram-desktop -y
 echo "resolviendo dependencias"
 sudo apt-get -f install
+echo "instalando qbittorrent"
+sudo apt-get install qbittorrent -y
 echo "instalando snap"
 sudo apt install snapd -y
+sudo apt-get -f install
 echo "ahora tienes que reiniciar la computadora y ejecutar snapapps en esta misma carpeta"
 sudo reboot
 
